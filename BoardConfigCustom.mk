@@ -7,6 +7,8 @@
 # Add before redbull BoardConfigCustom.mk
 BOOT_KERNEL_MODULES += ftm5.ko
 
-include device/google/redbull/BoardConfigCustom.mk
+include device/google/redbull/BoardConfigEvolution.mk
 
 include vendor/google/bramble/BoardConfigVendor.mk
+
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
