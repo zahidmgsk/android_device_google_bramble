@@ -19,6 +19,17 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a (5G)
 PRODUCT_NAME := lineage_bramble
 
+# Include GApps
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+$(call inherit-product-if-exists, vendor/gms/products/board.mk)
+$(call inherit-product-if-exists, vendor/gms/products/fonts.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
