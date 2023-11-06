@@ -10,3 +10,5 @@ BOOT_KERNEL_MODULES += ftm5.ko
 include device/google/redbull/BoardConfigLineage.mk
 
 include vendor/google/bramble/BoardConfigVendor.mk
+
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
