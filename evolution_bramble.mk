@@ -6,22 +6,27 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Inherit some common Evolution  stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+TARGET_IS_PIXEL := true
+TARGET_PIXEL_STAND_SUPPORTED := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
 $(call inherit-product, device/google/redbull/lineage_common.mk)
 
-include device/google/bramble/device-lineage.mk
+include device/google/bramble/device-evolution.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a (5G)
-PRODUCT_NAME := lineage_bramble
+PRODUCT_NAME := evolution_bramble
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=bramble \
