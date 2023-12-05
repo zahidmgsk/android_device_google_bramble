@@ -192,3 +192,7 @@ PRODUCT_PACKAGES += \
 # Workaround for Qualcomm neural network HAL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
+
+# Additional permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-launcher3.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-launcher3.xml
