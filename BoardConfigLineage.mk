@@ -13,3 +13,7 @@ BOOT_SECURITY_PATCH := 2023-11-05
 VENDOR_SECURITY_PATCH := 2023-11-05
 
 include vendor/google/bramble/BoardConfigVendor.mk
+
+# Disable mainline checking
+#PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
