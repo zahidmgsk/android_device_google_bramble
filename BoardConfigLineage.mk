@@ -9,8 +9,10 @@ BOOT_KERNEL_MODULES += ftm5.ko
 
 include device/google/redbull/BoardConfigLineage.mk
 
-BOOT_SECURITY_PATCH := 2023-11-05
-VENDOR_SECURITY_PATCH := 2023-11-05
+BOOT_SECURITY_PATCH := 2023-12-05
+VENDOR_SECURITY_PATCH := 2023-12-05
+
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 include vendor/google/bramble/BoardConfigVendor.mk
 
