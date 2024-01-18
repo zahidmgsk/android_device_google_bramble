@@ -5,7 +5,3 @@
 #
 
 $(call inherit-product, device/google/redbull/device-evolution.mk)
-
-# HBM
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlay

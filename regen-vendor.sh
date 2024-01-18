@@ -1081,7 +1081,6 @@ VENDOR_SKIP_FILES=(
 
     # Overlays
     "overlay/Flipendo__auto_generated_rro_vendor.apk"
-    "overlay/HbmSVManager__auto_generated_rro_vendor.apk"
     "overlay/SettingsGoogle__auto_generated_rro_vendor.apk"
     "overlay/StorageManagerGoogle__auto_generated_rro_vendor.apk"
     "overlay/SystemUIGoogle__auto_generated_rro_vendor.apk"
