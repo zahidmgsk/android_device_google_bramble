@@ -11,6 +11,12 @@ TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_IS_PIXEL := true
 TARGET_PIXEL_STAND_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+
+# GApps Flag
+WITH_GAPPS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
