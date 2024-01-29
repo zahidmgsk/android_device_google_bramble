@@ -17,6 +17,7 @@ TARGET_ENABLE_BLUR := true
 
 # GApps Flag
 WITH_GAPPS := true
+TARGET_USES_MINI_GAPPS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
