@@ -13,7 +13,8 @@ TARGET_IS_PIXEL := true
 TARGET_PIXEL_STAND_SUPPORTED := true
 
 # GApps Flag
-WITH_GAPPS := true
+WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Matrixx
 MATRIXX_MAINTAINER := Zahid_Choudhry
