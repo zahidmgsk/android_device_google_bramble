@@ -11,6 +11,7 @@ CPU     | Octa-core (1x2.4 GHz Kryo 475 Prime & 1x2.2 GHz Kryo 475 Gold & 6x1.8 
 GPU     | Adreno 620
 Memory  | 6GB RAM
 Shipped Android Version | Android 11, upgradable to Android 14
+Official OS Support | Last OS update build number Android 14 (UP1A.231105.001.B2)
 Storage | 128GB UFS 2.1
 Battery | Li-Po 3885 mAh, non-removable
 Charging | 18W wired, PD2.0
