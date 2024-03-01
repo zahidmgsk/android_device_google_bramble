@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Matrixx stuff.
+# Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -15,12 +15,6 @@ TARGET_PIXEL_STAND_SUPPORTED := true
 # GApps Flag
 WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
-
-# Matrixx
-MATRIXX_MAINTAINER := Zahid_Choudhry
-MATRIXX_CHIPSET := SM7250
-MATRIXX_BATTERY := 3885mah
-MATRIXX_DISPLAY := 1080x2340
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
